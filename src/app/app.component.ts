@@ -11,6 +11,10 @@ export class AppComponent {
   {
     console.warn(evt)
   }
+  getVal(val)
+  {
+    console.warn(val)
+  }
 }
   // getName() {
 
