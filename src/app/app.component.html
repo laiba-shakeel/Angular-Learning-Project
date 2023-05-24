@@ -8,9 +8,20 @@
 <app-login></app-login>
 <app-signup></app-signup>
 
+<!-- <button (click)="getName()">get my name</button> -->
 
+<button (click)="myEvent('this is your last warning !')">warning</button>
+<br /> <br /> 
+<input type="text" #box (keyup)="myEvent(box.value)" />
 
-
+<br> <br>
+<input type="text" (blur)="myEvent('blue')"  />
+<br> <br>
+<div 
+(mouseleave)="myEvent('mouse in here')"
+style="background-color: aquamarine;">
+Mouse Event
+</div>
 <!-- <h2>{{Name}}</h2>
 <h1>{{getName()}}</h1>
 <h3>{{obj.name}} <span>{{obj.age}}</span></h3>

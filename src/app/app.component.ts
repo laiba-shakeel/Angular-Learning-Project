@@ -6,15 +6,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'blog'
-  Name = 'Laiba shakeel'
-  getName() 
+  title = 'blog';
+  myEvent(evt) 
   {
-    return this.Name
+    console.warn(evt)
   }
-  obj={
-    name:'Lareb', 
-    age: '20y'
-  }
-  siteUrl= window.location.href
 }
+  // getName() {
+
+  //   alert("laiba")
+  // }
+  // Name = 'Laiba shakeel'
+  // getName() 
+  // {
+  //   return this.Name
+  // }
+  // obj={
+  //   name:'Lareb', 
+  //   age: '20y'
+  // }
+  // siteUrl= window.location.href
+
