@@ -5,7 +5,9 @@ import { AppComponent } from './app.component';
 import { RouterModule , Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { UserListComponent } from './user-list/user-list.component';
-import {UsersModule} from './users/users.module'
+import {UsersModule} from './users/users.module';
+import { ComponentsComponent } from './components/components.component';
+import { NavbarComponent } from './components/navbar/navbar.component'
 // const routes: Routes = [
 //   {path: 'home' , component: HomeComponent},
 //   {path: '' , redirectTo: '/home', pathMatch: 'full'}
@@ -15,7 +17,9 @@ import {UsersModule} from './users/users.module'
   declarations: [
     AppComponent,
     HomeComponent,
-    UserListComponent, 
+    UserListComponent,
+    ComponentsComponent,
+    NavbarComponent, 
   ],
   imports: [
     BrowserModule,
